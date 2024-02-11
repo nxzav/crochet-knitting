@@ -71,7 +71,7 @@ function removeLastLine() {
 }
 
 function clearAllFromBox() {
-  localStorage.clear();
+  localStorage.removeItem('lines');
   cachedLines = [];
   box.innerHTML = '';
 }

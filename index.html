@@ -1,53 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#153243" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
-    <title>Creador de patrones crochet</title>
-  </head>
-  <body>
-    <main>
-      <h1>
-        <img class="knit-icon" src="img/knit.svg" alt="knit-icon" />
-        Creador de patrones
-        <img class="knit-icon" src="img/knit.svg" alt="knit-icon" />
-      </h1>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#153243" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+  <title>Creador de patrones crochet</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="/"><img src="img/knit.svg" alt="Logo" width="60px" /></a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="/tutorial.html">Tutorial</a></li>
+        <li><a href="/">Español</a></li>
+        <li><a href="/en.html">English</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <h1>Creador de patrones</h1>
 
-      <div class="controls">
-        <button id="ring" class="control">Anillo</button>
-        <button id="pb" class="control pb">Punto bajo</button>
-        <button id="inc" class="control inc">
-          Aumento <img class="control-icon" src="img/aum.svg" alt="arrow-up" />
-        </button>
-        <button id="dec" class="control dec">
-          Disminución<img
-            class="control-icon"
-            src="img/dis.svg"
-            alt="arrow-down"
-          />
-        </button>
-      </div>
-
-      <div class="input-container">
-        <input
-          id="newLine"
-          placeholder="Añade el patrón de la vuelta aquí..."
+    <div class="controls">
+      <button id="ring" class="control">Anillo mágico</button>
+      <button id="pb" class="control pb">Punto Bajo</button>
+      <button id="inc" class="control inc">
+        Aumento <img class="control-icon" src="img/aum.svg" alt="arrow-up" />
+      </button>
+      <button id="dec" class="control dec">
+        Disminución<img
+          class="control-icon"
+          src="img/dis.svg"
+          alt="arrow-down"
         />
-        <button id="clearInput">Borrar</button>
-      </div>
-      <div class="lines-controls">
-        <button id="removeLine">Eliminar vuelta</button>
-        <button id="addLine">Añadir vuelta</button>
-      </div>
+      </button>
+    </div>
 
-      <div id="alertBox">There are no more lines</div>
-      <ol id="box"></ol>
-      <button id="clearAll">Limpiar todo</button>
-    </main>
+    <div class="input-container">
+      <input
+        id="newLine"
+        placeholder="Añade el patrón de la vuelta aquí..."
+      />
+      <button id="clearInput">Borrar</button>
+    </div>
+    <div class="lines-controls">
+      <button id="removeLine">Eliminar vuelta</button>
+      <button id="addLine">Añadir vuelta</button>
+    </div>
 
-    <script src="index.js"></script>
-  </body>
+    <div id="alertBox">There are no more lines</div>
+    <ol id="box"></ol>
+    <button id="clearAll">Limpiar todo</button>
+  </main>
+
+  <script src="index.js"></script>
+</body>
 </html>
